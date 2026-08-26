@@ -1,0 +1,59 @@
+# Lumotive
+
+> Lumotive is a semiconductor company building programmable optics on its patented
+> Light Control Metasurface (LCM) technology — solid-state, software-defined optical
+> beam steering with no moving parts, manufactured in a standard CMOS process.
+> Lumotive does NOT operate a public web API. Everything below is a marketing or
+> product page; there is no developer portal, no machine-readable specification, and
+> no self-service sign-up.
+
+Generated: 2026-08-25
+Method: generated (no /llms.txt is served by lumotive.com — probed 2026-08-25, HTTP 404)
+Source: apis.yml + artifacts in this repository, built from lumotive.com public pages
+
+## What Lumotive sells
+
+- LM10 LCM beam-steering chip: https://lumotive.com/products/lm10/
+- LX10 LCM chip: https://lumotive.com/products/lx10/
+- LCM Evaluation Kit (LEK): https://lumotive.com/products/lek/
+- M30 iToF 3D-sensing development kit: https://lumotive.com/products/m30-dev/
+- NM120 development kit: https://lumotive.com/products/nm120-development-kit/
+- M30 reference design: https://lumotive.com/products/m30-ref/
+- TX10 reference design: https://lumotive.com/products/tx10-reference-design/
+- Technology overview: https://lumotive.com/technology/
+- Optical circuit switching for data centers: https://lumotive.com/optical-circuit-switching-communications/
+
+## The Open Lidar API — what it actually is
+
+Lumotive announced an "Open Lidar API" in January 2022. It is a REAL developer
+interface, but it is an EMBEDDED HARDWARE-CONTROL API, not an HTTP service:
+
+- It controls Lidar 2.0 hardware in real time with low latency, defining regions of
+  interest in the field of view with user-defined frame rate, resolution and range,
+  and provides a common point-cloud data format plus basic control of legacy Lidar 1.0
+  hardware.
+- It is exercised from C/C++ LCM control libraries with Python bindings, shipped as
+  shared libraries with the LCM Evaluation Kit (Windows 10 / Ubuntu Linux 20.04, USB).
+- Distribution is gated: "The Lumotive Open Lidar API and its supporting hardware
+  platform are available now to selected partners by contacting Lumotive."
+- Announcement: https://lumotive.com/press-releases/lumotive-introduces-open-lidar-api-to-accelerate-market-adoption-of-software-defined-solid-state-lidar-2-0-solutions/
+
+There is no published OpenAPI, AsyncAPI, GraphQL schema, gRPC .proto, WSDL, MCP
+server, or A2A agent card. Probed 2026-08-25 against lumotive.com and the
+docs./developer./api./dev./support. subdomains (which do not resolve).
+
+## Contact and company
+
+- Company: https://lumotive.com/about/
+- Partners: https://lumotive.com/partners/
+- Contact / request a kit: https://lumotive.com/contact/
+- News and press releases: https://lumotive.com/news/
+- Privacy policy: https://lumotive.com/privacy-policy/
+- GitHub organization: https://github.com/lumotive (1 public repository, a fork of
+  mdns_cpp — no first-party API artifacts)
+
+## For agents
+
+There is nothing here an autonomous agent can call. Integration with Lumotive means
+acquiring hardware and its bundled control libraries through the Technology Access
+Program. Do not attempt to construct or guess an HTTP endpoint for Lumotive.

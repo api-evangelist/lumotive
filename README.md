@@ -64,5 +64,24 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Lumotive is a company surfaced via the API Evangelist harvest backlog (source: secondary-market) and added to the network as a stub for full-pipeline profiling.
-- https://www.hiive.com/securities/lumotive-stock
+Lumotive is a Seattle-based semiconductor company building programmable optics on its patented
+Light Control Metasurface (LCM) technology — solid-state, software-defined optical beam steering
+with no moving parts, manufactured in a standard CMOS process. Its products include the LM10 and
+LX10 LCM beam-steering chips, the LCM Evaluation Kit (LEK), the M30 iToF and NM120 3D-sensing
+development kits, and the M30/TX10 reference designs, applied to industrial automation, intelligent
+traffic systems, automotive ADAS and autonomy, defense, and optical circuit switching for AI data
+centers.
+
+Lumotive publishes an **Open Lidar API** — a real-time control interface for software-defined
+Lidar 2.0 hardware (region-of-interest scanning, frame rate, resolution, range, plus a common
+point-cloud format). It is an embedded hardware-control API, not a public web API: it is exercised
+through C/C++ LCM control libraries with Python bindings that ship inside the evaluation kits, and
+the company states it is "available now to selected partners by contacting Lumotive". As of
+2026-08-25 there is no developer portal, documentation site, machine-readable specification
+(OpenAPI/AsyncAPI/GraphQL/gRPC/WSDL), MCP server, agent card, `/llms.txt`, or `/.well-known/`
+document served on any Lumotive host.
+
+- https://lumotive.com/
+- https://lumotive.com/products/lek/
+- https://lumotive.com/news/
+- https://github.com/lumotive

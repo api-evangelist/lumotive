@@ -1,0 +1,22 @@
+generated: '2026-08-25'
+method: searched
+source: https://lumotive.com/products/ ; https://lumotive.com/contact/ ; https://lumotive.com/dev-kits-contacts/
+note: >-
+  Lumotive publishes no pricing of any kind. /pricing 404s and does not appear in the
+  site's own page sitemap. Chips, evaluation kits, development kits and reference
+  designs are quoted through sales ("Talk to an expert" / contact form), and the Open
+  Lidar API and its supporting hardware platform are, in the company's own words,
+  "available now to selected partners by contacting Lumotive". No free tier, no
+  self-service sign-up, no published unit or licence price.
+model: contact-sales
+plan_count: 0
+plans: []
+evidence:
+- url: https://lumotive.com/pricing/
+  status: 404
+- url: https://lumotive.com/page-sitemap.xml
+  status: 200
+  note: no pricing page listed
+- url: https://lumotive.com/press-releases/lumotive-introduces-open-lidar-api-to-accelerate-market-adoption-of-software-defined-solid-state-lidar-2-0-solutions/
+  status: 200
+  note: '"available now to selected partners by contacting Lumotive"'

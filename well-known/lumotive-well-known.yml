@@ -1,0 +1,44 @@
+generated: '2026-08-25'
+method: probed
+source: live HTTPS probes of lumotive.com/.well-known/*
+note: >-
+  Every well-known path probed on the only host Lumotive operates returned 404 from
+  the WordPress marketing site. No /.well-known document is served, so no WellKnown
+  or SecurityTxt pointer is wired in apis.yml — this file records a verified absence,
+  not a presence. Subdomains commonly used for developer surfaces (docs., developer.,
+  api., dev., support.lumotive.com) do not resolve at all (curl exit 6 / status 000).
+hosts:
+- host: lumotive.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+  - path: /.well-known/agent.json
+    status: 404
+    file: null
+unresolved_hosts:
+- host: docs.lumotive.com
+  note: DNS does not resolve
+- host: developer.lumotive.com
+  note: DNS does not resolve
+- host: api.lumotive.com
+  note: DNS does not resolve
+- host: dev.lumotive.com
+  note: DNS does not resolve
+- host: support.lumotive.com
+  note: DNS does not resolve

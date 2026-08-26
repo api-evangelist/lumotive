@@ -1,0 +1,18 @@
+generated: '2026-08-25'
+method: searched
+source: https://lumotive.com/ (full page sitemap walked) ; https://lumotive.com/products/lek/
+note: >-
+  No rate limits are documented, and none would apply in the usual sense: Lumotive's
+  Open Lidar API is a real-time embedded control interface to LCM hardware over a local
+  USB/host connection, delivered as C/C++ libraries with an evaluation kit — not a
+  metered HTTP service. There is no public HTTP API host to observe headers on. No
+  `RateLimits` pointer is wired in apis.yml, because this file records an absence and
+  the agent-readiness rate-limit dimension would otherwise credit it as a presence.
+applies: false
+limit_count: 0
+limits: []
+response_headers: []
+evidence:
+- url: https://lumotive.com/page-sitemap.xml
+  status: 200
+  note: no developer, docs or API reference page exists to carry limits

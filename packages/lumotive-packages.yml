@@ -1,0 +1,47 @@
+generated: '2026-08-25'
+method: searched
+source: >-
+  https://lumotive.com/products/lek/ ; registry probes of pypi.org, registry.npmjs.org,
+  crates.io, rubygems.org ; https://github.com/lumotive
+note: >-
+  Lumotive publishes NO client library to any public package registry. Its software is
+  distributed with hardware: the LCM Evaluation Kit page states the kit ships with
+  "Comprehensive C/C++ LCM Control Libraries" with "Python bindings available", an
+  "Intuitive GUI and sample scripts in Python", and "HW drivers delivered as shared
+  libraries" for Windows 10 / Ubuntu 20.04. None of that is downloadable without the
+  kit, so there is nothing with a version or a publish date to record. No `SDKs`
+  pointer is wired in apis.yml because no SDK is publicly obtainable.
+packages: []
+package_count: 0
+registry_probes:
+- registry: pypi
+  queries: [lumotive, lumotive-sdk, lumotive-api, open-lidar-api, openlidar]
+  status: 404
+- registry: npm
+  queries: [lumotive, '@lumotive/sdk', open-lidar-api]
+  status: 404
+- registry: rubygems
+  queries: [lumotive]
+  status: 404
+- registry: crates.io
+  queries: [lumotive]
+  status: 200
+  result: no matching crate
+distributed_with_hardware:
+- name: LCM Control Libraries
+  languages: [C, C++]
+  bindings: [Python]
+  distribution: bundled with the LCM Evaluation Kit (LEK)
+  registry: null
+  version: null
+  published: null
+  official: true
+  source: https://lumotive.com/products/lek/
+- name: LCM Host Drivers
+  languages: [C]
+  distribution: shared libraries bundled with the LCM Evaluation Kit (LEK), Windows 10 / Ubuntu 20.04
+  registry: null
+  version: null
+  published: null
+  official: true
+  source: https://lumotive.com/products/lek/
