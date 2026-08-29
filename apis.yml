@@ -12,6 +12,17 @@ description: 'Lumotive is a Seattle-based semiconductor company building program
   API, not a public web API: no developer portal, documentation site, machine-readable specification,
   or self-service sign-up is published, and access is granted to selected partners through the Technology
   Access Program by contacting the company.'
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 image: https://lumotive.com/wp-content/uploads/2024/10/LM10-chip-1024x787.png
 url: https://raw.githubusercontent.com/api-evangelist/lumotive/refs/heads/main/apis.yml
 x-type: company
