@@ -2,6 +2,13 @@
   "repo": "lumotive",
   "feeds": [
     {
+      "source": "https://lumotive.com/news/",
+      "feed_url": "https://lumotive.com/news/feed/",
+      "title": "",
+      "saved": 0,
+      "method": "discovered"
+    },
+    {
       "source": "https://lumotive.com/",
       "feed_url": "https://lumotive.com/feed/",
       "title": "",
@@ -9,13 +16,13 @@
       "method": "discovered"
     },
     {
-      "source": "https://lumotive.com/news/",
+      "source": "https://lumotive.com/feed/",
       "feed_url": "https://lumotive.com/feed/",
       "title": "",
       "saved": 0,
-      "method": "discovered"
+      "method": "feed"
     }
   ],
-  "post_count": 0,
-  "fetched": "2026-08-30T22:33:40Z"
+  "post_count": 1,
+  "fetched": "2026-09-06T19:17:18Z"
 }
