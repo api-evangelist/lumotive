@@ -16,6 +16,13 @@
       "method": "discovered"
     },
     {
+      "source": "https://lumotive.com/news/feed/",
+      "feed_url": "https://lumotive.com/news/feed/",
+      "title": "",
+      "saved": 0,
+      "method": "feed"
+    },
+    {
       "source": "https://lumotive.com/feed/",
       "feed_url": "https://lumotive.com/feed/",
       "title": "",
@@ -24,5 +31,5 @@
     }
   ],
   "post_count": 1,
-  "fetched": "2026-09-06T19:17:18Z"
+  "fetched": "2026-09-13T13:00:00Z"
 }
