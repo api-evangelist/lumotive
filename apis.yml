@@ -81,6 +81,8 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: RateLimits
+  url: rate-limits/lumotive-rate-limits.yml
 - type: DomainSecurity
   url: security/lumotive-domain-security.yml
 - type: Website
